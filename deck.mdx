@@ -1,23 +1,40 @@
-import { Head } from 'mdx-deck'
+import { Head, Appear } from 'mdx-deck'
+import { Split } from 'mdx-deck/layouts'
 
-export { default as theme } from './theme'
+export { code as theme } from 'mdx-deck/themes'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>React</title>
 </Head>
 
-# Hello
+# React
 
 ---
 
-## Edit this file
+## What's React?
 
-To create your presentation
-
-```notes
-- Create speaker notes in fenced code blocks
-```
+<Appear>
+  <p>
+    A JavaScript library for building user interfaces.
+  </p>
+  <p>
+    A library that will efficiently update and render just the right components when your data changes.
+  </p>
+  <p>
+    Let's you build encapsulated components that manage their own state, then compose them to make complex UIs.
+  </p>
+</Appear>
 
 ---
+export default Split
 
-<https://github.com/jxnblk/mdx-deck>
+A library that will efficiently update and render just the right components when your data changes.
+
+[![Edit l50lq3rr6z](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/l50lq3rr6z)
+
+---
+export default Split
+
+Let's you build encapsulated components that manage their own state, then compose them to make complex UIs.
+
+[![Edit 044qmvr53n](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/044qmvr53n)
