@@ -14,15 +14,17 @@ export { code as theme } from 'mdx-deck/themes'
 
 ---
 
-## What's React?
+## What is React?
 
+<Appear>
 A JavaScript library for building user interfaces.
+</Appear>
 
 ---
 
 A library that efficiently updates and renders just the right components when data changes.
 
-[![Edit l50lq3rr6z](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/l50lq3rr6z)
+[Docs](https://reactjs.org/docs/rendering-elements.html#react-only-updates-whats-necessary)
 
 ---
 Let's you build encapsulated components that manage their own state, then compose them to make complex UIs.
@@ -50,8 +52,8 @@ Two types of components
 ---
 
 <CodeSurfer
-  title="Function Component"
-  code={require("!raw-loader!./snippets/functional-component.js")}
+  title="Class Component"
+  code={require("!raw-loader!./snippets/class-component.js")}
   showNumbers={true}
   dark={true}
   theme={dracula}
@@ -60,9 +62,14 @@ Two types of components
 ---
 
 <CodeSurfer
-  title="Class Component"
-  code={require("!raw-loader!./snippets/class-component.js")}
+  title="Function Component"
+  code={require("!raw-loader!./snippets/functional-component.js")}
   showNumbers={true}
   dark={true}
   theme={dracula}
+  steps={[
+    {},
+    { notes: "Pass data from parent to child via `props`", tokens: { 4: [8] }},
+    { lines: [7,8,10] },
+  ]}
 />
