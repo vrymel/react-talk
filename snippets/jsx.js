@@ -1,28 +1,26 @@
-const MenuItem = (props) => {
-    return (
-        <div className="menuItem">
-            <span onClick={props.onClick}>
-                {props.favorite ? <FaHeart style={{ color: "red" }} /> : <FaHeart />}
-            </span>
-            <span className="description">{props.item}</span>
-        </div>
-    );
-};
+return (
+    <div className="menuItem">
+        <span onClick={() => this.setState({ favorite: !favorite })}>
+        {favorite ? HeartRed : HeartDefault}
+        </span>
+        <span className="description">{this.props.item}</span>
+    </div>
+);
 
 // After transpiling
-var MenuItem = function MenuItem(props) {
-    return React.createElement(
-        "div",
-        { className: "menuItem" },
-        React.createElement(
-            "span",
-            { onClick: props.onClick },
-            props.favorite ? React.createElement(FaHeart, { style: { color: "red" } }) : React.createElement(FaHeart, null)
-        ),
-        React.createElement(
-            "span",
-            { className: "description" },
-            props.item
-        )
-    );
-};
+return React.createElement(
+    "div",
+    { className: "menuItem" },
+    React.createElement(
+      "span",
+      { onClick: function onClick() {
+          return _this2.setState({ favorite: !favorite });
+        } },
+      favorite ? HeartRed : HeartDefault
+    ),
+    React.createElement(
+      "span",
+    { className: "description" },
+    this.props.item
+    )
+);

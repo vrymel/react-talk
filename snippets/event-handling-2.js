@@ -8,8 +8,9 @@ class MenuItem extends React.Component {
     this.state = {
       favorite: false
     };
+    this.handleOnClick = this.handleOnClick.bind(this);
   }
-  handleOnClick = () => {
+  handleOnClick() {
     this.setState({ favorite: !this.state.favorite })
   }
   render() {
